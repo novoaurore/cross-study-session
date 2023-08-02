@@ -1,0 +1,9 @@
+The who application is made of the following services:
+- Worker
+The following command should be run once the container start ["./wait-for-it.sh", "database:5432", "--", "yarn", 
+"run:worker"]
+volume should be map to /usr/src/app
+Environment variable: DATABASE_HOST=database ; DATABASE_PORT=5432 (preferable called inside the 
+compose file but we leave this to your discretion)
+This service should not start before the database service
+The base image is: devopseasylearning2021/s5dylan:frontend
