@@ -1,0 +1,13 @@
+orders: 
+ labels: {{- toYaml .Values.orders.labels
+ matchLabels: {{- toYaml .Values.orders.m
+ config-data : {{- toYaml .Values.orders.
+ strategy: {{- toYaml .Values.orders.stra
+ env: {{- toYaml .Values.orders.env | nin
+ envFrom: {{- toYaml .Values.orders.envFr
+ liveness: {{- toYaml .Values.orders.live
+ volumemount: {{- toYaml .Values.orders.v
+ volumes: {{- toYaml .Values.orders.volum
+ containerPort: {{- toYaml .Values.servic
+ port: {{- toYaml .Values.service.orders.
+
